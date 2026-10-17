@@ -8,8 +8,8 @@ DATASET_DIR = BASE_DIR / 'dataset'
 
 
 def init_db():
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    DATASET_DIR.mkdir(parents=True, exist_ok=True)
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)#caminho do banco
+    DATASET_DIR.mkdir(parents=True, exist_ok=True)#banco
     conect = sqlite3.connect(DB_PATH)  # Conexão com o banco de dados sqlite
     cursor = conect.cursor()  # Executar/usar comandos/queries SQL
 
